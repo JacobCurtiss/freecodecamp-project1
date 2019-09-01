@@ -1,0 +1,55 @@
+* {
+    font-size: 10px;
+}
+
+
+body {
+    background-color: rgb(109, 101, 101);
+}
+
+p {
+    font-size: 1.6em;
+}
+
+#main {
+    height: 100% vh;
+    width: 100% vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template:
+    [row1-start] ". header ." 25px [row1-end]
+    [row2-start] "picture content ." 25px [row2-end];
+}
+
+#title {
+    display: grid;
+    grid-area: header;
+    font-weight: bold;
+    font-size: 3.2em;
+    justify-self: center;
+}
+
+#img-div {
+    display: grid;
+    grid-area: picture;
+    justify-self: center;
+}
+
+#image {
+   width: 400px;
+   height: 500px;
+   display: grid;
+   justify-self: center;
+   padding: 10px auto;
+}
+
+#tribute-info {
+    display: grid;
+    grid-area: content;
+    padding: 10px;
+}
+
+#img-caption {
+    padding-top: 0;
+}
